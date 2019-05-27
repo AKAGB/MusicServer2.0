@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>单曲播放</title>
+    <link rel="stylesheet" href="../css/controller.css">
+    <link rel="stylesheet" href="../css/songlist.css" />
+    <link rel="stylesheet" href="../css/song.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <script src="../js/music_player.js"></script>
+</head>
+
+<body>
+
+    
+
+    <div id="main">
+
+        
+        <div class="songlist">
+            <table border="0">
+                <thead class="songList_header">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th class="songList_header_name">歌曲 </th>
+                        <th class="songList_header_author">歌手 </th>
+                        <th class="songList_header_album">专辑 </th>
+                        <th class="songList_header_time">时长</th>
+                    </tr>
+                </thead>
+                <tbody class="songList_main">
+                    <!-- <tr>
+                        <th class="num">1</th>
+                        <th class="play_img"><i class="fa fa-play" aria-hidden="true" id="songlist_p1"></i></th>
+                        <th class="songList_songname" title="无聊的一天"> 无聊的一天</th>
+                        <th class="songList_songauthor" title="周笔畅"> 周笔畅</th>
+                        <th class="songList_album" title="我是唱作人第一季">我是唱作人第一季</th>
+                        <th class="songList_songtime" title="03:44">03:44</th>
+                    </tr> -->
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div id="right">
+            <div id="Song_info">
+                <div id="singer_img"></div>
+                <div id="song_info_name">歌曲名：</div>
+                <div id="song_info_singer">歌手名：</div>
+                <div id="song_info_album">专辑名：</div>
+            </div>
+            <div id="Song_Word_box">
+
+                <div id="Song_Word_inner">
+                    <p data-id="line_0">光年之外 (《太空旅客（Passengers）》电影中国区主题曲) - G.E.M. 邓紫棋 (Gem Tang)</p>
+                    <p data-id="line_1">词：G.E.M. 邓紫棋</p>
+                    <p data-id="line_2">曲：G.E.M. 邓紫棋</p>
+                    <p data-id="line_3">编曲：Lupo Groinig</p>
+                    <p data-id="line_4">监制：Lupo Groinig</p>
+                    <p data-id="line_5">感受停在我发端的指尖</p>
+                    <p data-id="line_6">如何瞬间冻结时间</p>
+                    <p data-id="line_7">记住望着我坚定的双眼</p>
+                    <p data-id="line_8">也许已经没有明天</p>
+                    <p data-id="line_9">面对浩瀚的星海</p>
+                    <p data-id="line_10">我们微小得像尘埃</p>
+                    <p data-id="line_11">漂浮在一片无奈</p>
+                    <p data-id="line_12">缘分让我们相遇乱世以外</p>
+                    <p data-id="line_13">命运却要我们危难中相爱</p>
+                    <p data-id="line_14">也许未来遥远在光年之外</p>
+                    <p data-id="line_15">我愿守候未知里为你等待</p>
+                    <p data-id="line_16">我没想到为了你我能疯狂到</p>
+                    <p data-id="line_17">山崩海啸没有你根本不想逃</p>
+                    <p data-id="line_18">我的大脑为了你已经疯狂到</p>
+                    <p data-id="line_19">脉搏心跳没有你根本不重要</p>
+                    <p data-id="line_20">一双围在我胸口的臂弯</p>
+                    <p data-id="line_21">足够抵挡天旋地转</p>
+                    <p data-id="line_22">一种执迷不放手的倔强</p>
+                    <p data-id="line_23">足以点燃所有希望</p>
+                    <p data-id="line_24">宇宙磅礡而冷漠</p>
+                    <p data-id="line_25">我们的爱微小却闪烁</p>
+                    <p data-id="line_26">颠簸却如此忘我</p>
+                    <p data-id="line_27">缘分让我们相遇乱世以外</p>
+                    <p data-id="line_28">命运却要我们危难中相爱</p>
+                    <p data-id="line_29">也许未来遥远在光年之外</p>
+                    <p data-id="line_30">我愿守候未知里为你等待</p>
+                    <p data-id="line_31">我没想到为了你我能疯狂到</p>
+                    <p data-id="line_32">山崩海啸没有你根本不想逃</p>
+                    <p data-id="line_33">我的大脑为了你已经疯狂到</p>
+                    <p data-id="line_34">脉搏心跳没有你根本不重要</p>
+                    <p data-id="line_35">也许航道以外是醒不来的梦</p>
+                    <p data-id="line_36">乱世以外是纯粹的相拥</p>
+                    <p data-id="line_37">我没想到为了你我能疯狂到</p>
+                    <p data-id="line_38">山崩海啸没有你根本不想逃</p>
+                    <p data-id="line_39">我的大脑为了你已经疯狂到</p>
+                    <p data-id="line_40">脉搏心跳没有你根本不重要</p>
+                    <p data-id="line_41">相遇乱世以外危难中相爱</p>
+                    <p data-id="line_42">相遇乱世以外危难中相爱</p>
+                    <p data-id="line_43">我没想到</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="controller">
+        <div id="step-backward" class="player-controller">
+            <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+        <div id="play" class="player-controller">
+            <i class="fa fa-play fa-2x"></i>
+        </div>
+        <div id="step-forward" class="player-controller">
+            <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+        <div id="music-progress" class="player-controller">
+            <div id="music-info"></div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+                <div class="progress-his"></div>
+                <div class="progress-point"></div>
+            </div>
+            <div id="music-full-time"><span id="cur-time">00:00</span> / <span id="total-time">03:53</span></div>
+        </div>
+
+        <div id="play-mode" class="player-controller img-controller">
+            <!-- <i class="fa fa-random fa-2x"></i> -->
+            <div class="play-mode-icon" title="列表循环"></div>
+        </div>
+
+        <!-- <div id="add-music" class="player-controller img-controller">
+            <div class="add-music-icon"></div>
+        </div> -->
+
+        <div id="download-music" class="player-controller img-controller">
+            <div class="download-music-icon" title="下载音乐">
+                <a href="https://www.baidu.com"></a>
+            </div>
+        </div>
+
+        <div id="volume" class="player-controller img-controller">
+            <div class="volumn-icon" title=""></div>
+        </div>
+
+        <div class="progress volume-controller">
+            <div class="progress-bar"></div>
+            <div class="progress-his"></div>
+            <div class="progress-point"></div>
+        </div>
+    </div>
+</body>
+
+</html>
