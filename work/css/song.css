@@ -33,8 +33,6 @@ body{
     margin: 0 auto;
     width: 200px;
     height: 200px;
-    background-color: red;
-    background-image: url(../images/guangnian.jpg);
     background-size: 100%;
     border-radius: 50%;
 }
@@ -45,7 +43,7 @@ body{
     overflow: hidden;
     position: absolute;
     margin: auto;
-    top: 350px;
+    top: 380px;
     right: 20px;
     /* background-color: rebeccapurple; */
     
@@ -60,8 +58,10 @@ body{
 }
 #Song_Word_inner{
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
+    transition: top 0.8s;
 }
 p{
     font-size: 1.2em;

@@ -53,3 +53,6 @@ tr {
     height: 35px;
 }
 
+.fa-play:hover {
+    cursor: pointer;
+}
